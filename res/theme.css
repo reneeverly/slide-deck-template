@@ -1,0 +1,45 @@
+@import url("../lib/roadua/Road UA/WOFF, WOFF2/style.css");
+
+/* Colors Reminiscent of a Certain Extinct Variety of Phone */
+
+/* color contrast checker: very good, very good, very good */
+.theme.pink { --accent-color: #e671b8; --accent-contrast: #000; --background-color: #fff; --font-color: #000; }
+.theme.lime { --accent-color: #a2c139; --accent-contrast: #000; --background-color: #fff; --font-color: #000; }
+.theme.mango { --accent-color: #f09609; --accent-contrast: #000; --background-color: #fff; --font-color: #000; }
+
+/* color contrast checker: poor, very poor, very poor, good, good, good, good */
+.theme.green { --accent-color: #339933; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.viridian { --accent-color: #00aba9; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.blue { --accent-color: #1ba1e2; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.purple { --accent-color: #aa00ff; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.magenta { --accent-color: #d80073; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.red { --accent-color: #e51400; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.brown { --accent-color: #a05000; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+
+/* color contrast checker: poor, good, good, good */
+.theme.olive { --accent-color: #4E5B48; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.steel { --accent-color: #647687; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.mauve { --accent-color: #76608a; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+.theme.sienna { --accent-color: #a0522d; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
+
+body { color: black; color: var(--font-color, black); font-family: 'RoadUA', Helvetica, Arial; }
+h3 { color: grey; color: var(--accent-color, grey); }
+a { color: grey; color: var(--accent-color, grey); }
+section { background: white; background: var(--background-color, white); }
+
+.cover, .interlude { background: grey; background: var(--accent-color, grey); color: white; color: var(--accent-contrast, white); }
+.inverse { background: black; background: var(--font-color, black); color: white; color: var(--background-color, white); }
+.banner { position: absolute; bottom: 0; width: 100%; padding: 2.5% 10% !important; background: white; background: var(--background-color, white); color: black; color: var(--font-color, black); margin: 0; }
+
+.interlude h3 {color: white; color: var(--accent-contrast, white); text-align: center; }
+
+.interlude, .cover { display: flex; justify-content: center; flex-direction: column; }
+
+.cover p, .cover h3, .cover h2 { margin: 0; padding: 0 10%; }
+.cover { padding-bottom: 10%; }
+
+section { padding-top: 5%; padding-bottom: 5%; }
+
+section > * { padding-left: 12%; padding-right: 12%; }
+
+p { margin-top: 0.5em; margin-bottom: 0.5em; }

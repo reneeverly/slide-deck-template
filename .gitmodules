@@ -1,0 +1,3 @@
+[submodule "lib/roadua"]
+	path = lib/roadua
+	url = git@github.com:agentyzmin/Road-UA-Font.git
