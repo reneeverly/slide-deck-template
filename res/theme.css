@@ -1,4 +1,4 @@
-@import url("../lib/roadua/Road UA/WOFF, WOFF2/style.css");
+@import url("../lib/style.css");
 
 /* Colors Reminiscent of a Certain Extinct Variety of Phone */
 
@@ -23,23 +23,19 @@
 .theme.sienna { --accent-color: #a0522d; --accent-contrast: #fff; --background-color: #fff; --font-color: #000; }
 
 body { color: black; color: var(--font-color, black); font-family: 'RoadUA', Helvetica, Arial; }
-h3 { color: grey; color: var(--accent-color, grey); }
-a { color: grey; color: var(--accent-color, grey); }
-section { background: white; background: var(--background-color, white); }
+h2, a { color: grey; color: var(--accent-color, grey); }
+section { background-color: white; background-color: var(--background-color, white); padding: 5% 10%; }
 
-.cover, .interlude { background: grey; background: var(--accent-color, grey); color: white; color: var(--accent-contrast, white); }
-.inverse { background: black; background: var(--font-color, black); color: white; color: var(--background-color, white); }
-.banner { position: absolute; bottom: 0; width: 100%; padding: 2.5% 10% !important; background: white; background: var(--background-color, white); color: black; color: var(--font-color, black); margin: 0; }
+.cover, .interlude { background-color: grey; background-color: var(--accent-color, grey); color: white; color: var(--accent-contrast, white); text-align: center; }
+.inverse { background-color: black; background-color: var(--font-color, black); color: white; color: var(--background-color, white); }
+.banner { position: absolute; bottom: 0; left: 0; width: 100%; padding: 2.5% 10% !important; background-color: white; background-color: var(--background-color, white); color: black; color: var(--font-color, black); margin: 0; }
 
-.interlude h3 {color: white; color: var(--accent-contrast, white); text-align: center; }
+.interlude h2 {color: white; color: var(--accent-contrast, white); text-align: center; }
 
-.interlude, .cover { display: flex; justify-content: center; flex-direction: column; }
+.interlude, .cover { display: flex; justify-content: center; flex-direction: column; vertical-align: middle; }
 
-.cover p, .cover h3, .cover h2 { margin: 0; padding: 0 10%; }
+.cover p, .cover h2, .cover h1 { margin: 0; }
 .cover { padding-bottom: 10%; }
 
-section { padding-top: 5%; padding-bottom: 5%; }
-
-section > * { padding-left: 12%; padding-right: 12%; }
-
 p { margin-top: 0.5em; margin-bottom: 0.5em; }
+

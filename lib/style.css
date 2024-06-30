@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'RoadUA';
+    src: local('Road UA Thin'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Thin.woff2') format('woff2'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Thin.woff') format('woff'), url('roadua/Road%20UA/TTF/RoadUA-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadUA';
+    src: local('Road UA ExtraLight'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-ExtraLight.woff2') format('woff2'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-ExtraLight.woff') format('woff'), url('roadua/Road%20UA/TTF/RoadUA-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadUA';
+    src: local('Road UA Light'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Light.woff2') format('woff2'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Light.woff') format('woff'), url('roadua/Road%20UA/TTF/RoadUA-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadUA';
+    src: local('Road UA Regular'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Regular.woff2') format('woff2'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Regular.woff') format('woff'), url('roadua/Road%20UA/TTF/RoadUA-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadUA';
+    src: local('Road UA Medium'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Medium.woff2') format('woff2'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Medium.woff') format('woff'), url('roadua/Road%20UA/TTF/RoadUA-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadUA';
+    src: local('Road UA Bold'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Bold.woff2') format('woff2'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Bold.woff') format('woff'), url('roadua/Road%20UA/TTF/RoadUA-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadUA';
+    src: local('Road UA ExtraBold'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-ExtraBold.woff2') format('woff2'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-ExtraBold.woff') format('woff'), url('roadua/Road%20UA/TTF/RoadUA-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadUA';
+    src: local('Road UA Black'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Black.woff2') format('woff2'), url('roadua/Road%20UA/WOFF,%20WOFF2/RoadUA-Black.woff') format('woff'), url('roadua/Road%20UA/TTF/RoadUA-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
