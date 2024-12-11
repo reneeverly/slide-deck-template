@@ -7,7 +7,7 @@
 
 body, html { margin: 0; padding: 0; }
 div { display: block !important; height: 100%; position: relative; }
-section { display: block !important; height: 100%; min-height: 8in; position: relative; font-size: 0.3in; } /* 2.5% of 12in */
+section { display: block !important; height: 100%; min-height: 8in; position: relative; font-size: 0.3in; line-height: 0.4in; } /* 2.5% of 12in */
 
 /*.banner { width: 12in; position: absolute; left: 0in; top: 7in; line-height: 0.5in; }*/
 

@@ -54,6 +54,30 @@
 		<h2>Let's look at some examples.</h2>
 	</section></div>
 
+	<div tabindex="0"><section>
+		<h2>Overflow Test: Effective Survey Design</h2>
+		<ul>
+			<li>The best survey is one in which the participant knows generally what it is about, but not specifically what the researchers are looking into.
+				<ul>
+					<li>That makes the participants less likely to bias their answers because they think you want a certain answer.</li>
+				</ul>
+			</li>
+			<li>One way to accomplish this is to avoid leading questions.
+				<ul>
+					<li>Instead of : Do you agree that mental health support on campus is garbage? [yes, no]</li>
+					<li>Try: How do you feel about NIU’s support of student mental health? [Likert great, okay, meh, not good, bad]</li>
+				</ul>
+			</li>
+			<li>Conducting human research at NIU is subject to regulations by the IRB (Institutional Review Board).</li>
+			<li>Ordinarily, all surveys have to be submitted to the IRB along with 10 pages of forms to be approved before sending the survey out.</li>
+			<li>As students, we have an exemption but only under very specific circumstances.</li>
+			<li>The survey must be for an assignment in a class.</li>
+			<li>The survey results must only be used for the class and cannot be used in any other class nor in other research.</li>
+			<li>Last Question: Would you be interested in participating in a Focus Group on this topic? (Optional) Enter your email address if you are interested. [Text box]</li>
+			<li>You are required to have 2 separate primary research items.  The survey -> focus group pipeline is recommended, but not obligatory.  Observations are a wonderful alternative.</li>
+		</ul>
+	</section></div>
+
 	<div tabindex="0"><section class="interlude">
 		<h2>...</h2>
 	</section></div>
@@ -75,5 +99,58 @@
 	</section></div>
 
 	</div>
+
+	<script>
+	// This should be the only JS ever run - and only for convenience - the page should be usable without it anyways.
+	// Try to maintain legacy browser compatibility - no let!
+
+	// TODO: :scope isn't widely available
+
+	// Fix overflow content by moving it to a new slide.
+	var slides = /*Array.from(*/document.getElementsByTagName('section')/*)*/
+	for (var i = 0; i < slides.length; i++) {
+		var target_height = slides[i].parentElement.getBoundingClientRect().height
+		if (slides[i].scrollHeight > target_height) {
+			console.log('hi')
+			var new_slide_div = document.createElement('div')
+			new_slide_div.setAttribute('tabindex', 0)
+
+			var new_slide_section = document.createElement('section')
+			new_slide_section.className = slides[i].className
+
+			// scan for elements to yoink - but make sure we don't infinitely loop by checking height of item against slide height
+			var lists = Array.from(slides[i].querySelectorAll(':scope > ul')).concat(Array.from(slides[i].querySelectorAll(':scope > ol')))
+			for (var j = lists.length - 1; j >= 0; j--) {
+				var items = Array.from(lists[j].querySelectorAll(':scope > li'))
+				// Add the container to the new slideeeeee
+				var new_list = document.createElement(lists[j].tagName)
+				for (var k = items.length - 1; k >= 0; k--) {
+					// check if it'll cause an infinite loop of new slides
+					if (items[k].scrollHeight > target_height) break
+					// check if we've moved enough items
+					if (slides[i].scrollHeight <= target_height) break
+
+					// all good to add to the new slide!
+					new_list.prepend(items[k])
+				}
+				if (items.length > 0) {
+					new_slide_section.prepend(new_list)
+				}
+				// check to see if we broke, if so break
+				if (k >= 0) {
+					break
+				}
+			}
+
+			// Add the new slide
+			new_slide_div.appendChild(new_slide_section)
+			if (i == slides.length - 1) {
+				slides[i].parentElement.parentElement.appendChild(new_slide_div)
+			} else {
+				slides[i].parentElement.parentElement.insertBefore(new_slide_div, slides[i+1].parentElement)
+			}
+		}
+	}
+	</script>
 </body>
 </html>
