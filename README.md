@@ -1,7 +1,9 @@
 # slide-deck-template
 Slide deck template which can be presented via web or converted to PDF/UA.
 
-The font used in the default theme is the wonderful RoadUA by MintType, CC BY-ND.  PDF/UA requires that fonts be embedded in the document, so using a nice freely licensed font makes that a lot easier.
+PDF/UA requires that fonts be embedded in the document, so using nice freely licensed fonts makes that a lot easier.
+* The standard font is [RoadUA](https://github.com/agentyzmin/Road-UA-Font/) by MintType, licensed CC BY-ND 4.0.
+* The italic font is a modified version of [MLModern](https://ctan.org/pkg/mlmodern) by B. Jackowski, J.M Nowacki, and Daniel Benjamin Miller, licensed LPPL 1.3c; It was converted to TTF via [these instructions](https://www.reddit.com/r/LaTeX/comments/p4r53g/where_can_i_get_the_mlmodern_font_as_a_ttf_file/), and then adjusted to match the metrics of RoadUA [using these instructions](https://www.maxkohler.com/posts/2022-02-19-fixing-vertical-metrics/).
 
 The PDF rendering engine is the lovely Weasyprint, which is available via apt, brew, etc.
 
@@ -10,7 +12,7 @@ Do note that some color palettes will trigger WCAG failure.  I'm still sorting t
 ## Bugfix Todo List
 * [ ] There's a blank page at the start of the PDF.
 * [ ] Resolve WCAG issues with color palettes.
-* [ ] No italics in PDF (I think the browser is improvising an italicisation which Weasyprint does not do.)
+* [x] No italics in PDF (I think the browser is improvising an italicisation which Weasyprint does not do.)
 * [ ] Overflow pages have wrong padding on PDF. (Current options: Preprocess with PhantomJS or something.)
 * [ ] Cover slide does not position bottom bar at bottom (positions it at middle).
 

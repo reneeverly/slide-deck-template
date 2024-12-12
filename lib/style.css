@@ -53,3 +53,9 @@
     font-weight: 900;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'RoadUA';
+    src: url('mlmodern/mlmri8_borked.ttf') format('truetype');
+    font-style: italic;
+}
