@@ -18,8 +18,20 @@ section h2 { font-size: 5cqw; }
 
 .slide-deck-holder:not(:has(input:checked)) > div { height: 100vh; width: 100%; align-content: center; }
 
-section { container-type: inline-size; position: relative; border: 1px solid grey; max-height: 100vh; aspect-ratio: 3/2; margin: auto; font-size: 2.5cqw; }
+section { container-type: inline-size; position: relative; border: 1px solid grey; max-height: 100vh; aspect-ratio: 3/2; margin: auto; }
+
 section ul { padding-left: 4%; }
+
+/* setting cqw to section, not div, to fix scale issue when fullscreen */
+/* using basis 1em = 2.5cqw */
+section p, section ul { font-size: 3.125cqw; } /* 3.125, not 2.5 for reasons unclear to me */
+section h1 { font-size: 5cqw; } /* 2em */
+section h2 { font-size: 4.75cqw; } /* 1.5em */
+section h3 { font-size: 2.925cqw; } /* 1.17em */
+section h4 { font-size: 2.5cqw; } /* 1em */
+section h5 { font-size: 2.075cqw; } /* 0.83em */
+section h6 { font-size: 1.675cqw; } /* 0.67em */
+
 
 .slide-deck-holder > div { container-type: size; overflow: scroll; /*display: table;*/ }
 

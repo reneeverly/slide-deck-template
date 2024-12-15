@@ -10,11 +10,13 @@ The PDF rendering engine is the lovely Weasyprint, which is available via apt, b
 Do note that some color palettes will trigger WCAG failure.  I'm still sorting that out.
 
 ## Bugfix Todo List
-* [ ] There's a blank page at the start of the PDF.
+* [x] There's a blank page at the start of the PDF.
 * [ ] Resolve WCAG issues with color palettes.
 * [x] No italics in PDF (I think the browser is improvising an italicisation which Weasyprint does not do.)
-* [ ] Overflow pages have wrong padding on PDF. (Current options: Preprocess with PhantomJS or something.)
-* [ ] Cover slide does not position bottom bar at bottom (positions it at middle).
+* [ ] PDF: Overflow pages have wrong padding. (Current options: Preprocess with PhantomJS or something.)
+* [x] PDF: Cover slide does not position bottom bar at bottom (positions it at middle).
+* [x] Font size scales too large when full screen presenting.
+* [x] Add UTF-8 Meta tag
 
 ## Feature Todo List
 * [x] Markdown to HTML
