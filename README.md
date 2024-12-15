@@ -17,5 +17,5 @@ Do note that some color palettes will trigger WCAG failure.  I'm still sorting t
 * [ ] Cover slide does not position bottom bar at bottom (positions it at middle).
 
 ## Feature Todo List
-* [ ] Markdown to HTML
+* [x] Markdown to HTML
 * [ ] Image and caption slide styles (fill, left flush, etc.)

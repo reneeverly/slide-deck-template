@@ -1,0 +1,6 @@
+title: Renée's Slide Deck Generator
+description: >
+    A template designed to produce beautiful presentations both online and in PDF form.  Additionally, those PDFs must conform to the PDF/UA standard and thus be accessible.
+baseurl: ""
+
+markdown: kramdown
